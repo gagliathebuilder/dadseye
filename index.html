@@ -1,144 +1,152 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-}
-
-header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    margin: 0;
-}
-
-header .tagline {
-    font-weight: 300;
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-.sticky-nav {
-    background: #343a40;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.sticky-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.sticky-nav ul li {
-    margin: 0 15px;
-}
-
-.sticky-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
-}
-
-.sticky-nav ul li a:hover {
-    color: #007bff;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.focus-item, .blog-post {
-    background: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.focus-item h3, .blog-post h3 {
-    color: #343a40;
-    margin-top: 0;
-}
-
-.focus-item p, .blog-post p {
-    margin-bottom: 15px;
-}
-
-.blog-post a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
-}
-
-.blog-post a:hover {
-    color: #0056b3;
-}
-
-footer {
-    background: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
-}
-
-footer ul li a:hover {
-    color: #007bff;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Gaglia - Finance & Family Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #00539C;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-family: 'Merriweather', serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0078D7;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .about {
+            margin-bottom: 40px;
+        }
+        .about h2 {
+            color: #00539C;
+            font-weight: 700;
+            font-family: 'Merriweather', serif;
+        }
+        .about p {
+            line-height: 1.6;
+        }
+        .blog {
+            margin-bottom: 40px;
+        }
+        .blog h2 {
+            color: #00539C;
+            font-weight: 700;
+            font-family: 'Merriweather', serif;
+        }
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h3 {
+            margin-top: 0;
+            font-weight: 700;
+        }
+        footer {
+            background-color: #00539C;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('t-m-2v9x3cj1TAw-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 83, 156, 0.7);
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .about-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chris Gaglia</h1>
+        <p>Finance Trends & Healthy Family Lifestyle</p>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">Welcome to My Journey</div>
+    </div>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Chris Gaglia" class="about-image">
+            <p>I’ve always been driven by innovation and the desire to stay ahead of the curve. From pioneering the evolution of mobile apps to leading programmatic advertising, I’ve shaped industries and delivered results. Today, I bring that same passion to wealth management—helping families and professionals secure their financial futures. Let’s connect and make your goals a reality.</p>
+        </section>
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Finance Trends to Watch in 2024</h3>
+                <img src="https://via.placeholder.com/800x200" alt="Finance Trends" class="about-image">
+                <p><em>Posted on October 1, 2024</em></p>
+                <p>The financial landscape is constantly evolving, with new trends emerging that will shape the way we manage our investments. Here are some key trends to watch for in 2024, including sustainable investing, AI-driven wealth management, and more...</p>
+            </div>
+            <div class="blog-post">
+                <h3>Balancing Family Life and Financial Planning</h3>
+                <img src="https://via.placeholder.com/800x200" alt="Family Planning" class="about-image">
+                <p><em>Posted on September 15, 2024</em></p>
+                <p>Managing finances while raising a young family can be challenging, but with the right mindset and tools, you can achieve both financial stability and a healthy family lifestyle. Here are some practical tips for balancing both...</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Chris Gaglia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
